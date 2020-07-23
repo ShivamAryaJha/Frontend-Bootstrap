@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>UPSC Mains Course</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="C:/Users/jhash_000/Desktop/Economics Portal/pageup.css">
+<link rel="stylesheet" href="C:/Users/jhash_000/Desktop/Economics Portal/UserRatings.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta name="Shivam Arya" content="Geekystuff">
+<meta name="description" content="My first website ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+   font-family: "Verdana";
+   height:100%;
+}
+
+.customhead{
+   border-bottom: 1px solid lightgray;
+   background-color: #ebebe6;
+}
+
+
+#logo{
+    font-family: "Garamond";
+    font-size: 280%;
+    color: #0066cc;
+    line-height: 20px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.cart:hover, .bell:hover{
+    background-color: lightgray;
+}
+
+#log{
+	font-family: "Garamond";
+    float:right;
+	color:#0066cc;
+	font-size: 120%;
+	background-color:  #ebebe6;
+	border: 1px solid #0066cc;
+    margin-right: 0px;
+    width: 80px;
+    height: 42px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#logo:hover, #log:hover{
+	color: maroon ;
+	border-color: maroon;
+}
+
+#sign{
+	font-family: "Garamond";
+	float:right;
+	background-color: #0066cc;
+	color:white;
+	font-size: 120%;
+	border: none;
+    margin-right: 30px;
+    width: 85px;
+    height: 42px;    margin-left: 0px;
+}
+
+#sign:hover{
+    background-color: maroon;
+}
+
+.cart, ,.bell{
+	border: 1px solid gray;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+<div  class = "container-fluid customhead ">
+  <div class = "row align-items-center justify-content-start no-gutters" >
+  <div class = "pl-4  col-md-4 pt-3 pb-4  ml-5 logodiv"> 
+	<h1 id = "logo"> TheGoldenSparrow </h1>
+  </div>
+  <div class = "float-right col-md-4 pt-4 pb-3 "> 
+  </div>
+  <div class = "col-md-1 py-3 pl-1 pr-0 "> 
+      <a href="#"  title="Shopping Cart" data-toggle="popover" data-placement="bottom" data-content="Your cart is empty. Keep Shopping to find a course.">
+	  <i class="far fa-bell" class="img-thumbnail bell" style = "font-size: 200%; background-color: white; padding: 9px; border-radius: 25px 25px 25px 25px;"> </i> </a>
+
+	 <img src = "C:\Users\jhash_000\Desktop\Economics Portal\download.jpg" class="float-right rounded-circle img-thumbnail cart"  height = 45px; width = 50px; >
+
+  </div>
+  <div class = "push-right col-md-1  py-4" > 
+    <button id = "log" type = "button" class = " btn btn-primary" data-toggle="modal" data-target="#mylogin"> LogIn </button>
+    
+    <div class="modal fade" id="mylogin">
+    <div class="modal-dialog">
+      <div class="modal-content" style = "max-width: 90%;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style = "background-color: #f0e6df;">
+          <h4 class="modal-title">Log In to your Account </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style = "background-color: #f0e6df;">
+           <div class = "container mt-1">
+           	 <div class = "row justify-content-center px-0 py-3">
+
+           	   <div class = "col-8" style = "background-color: #3b5998; color: white; text-align:center; font-size: 130%; font-family: Tahoma;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\fb.png" height = 30px; width = 30px; float = "left"> Continue with Facebook</div>
+
+           	   <div class = "col-8" style = "background-color: white; border: 1px solid lightgray; text-align:center; font-size: 130%; font-family: Georgia;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\google.png" height = 35px; width = 35px; float = "left"> Continue with Google
+               </div> 
+           	 </div>
+           </div>
+           
+           <hr >
+           <div class="container">
+               <form action="/action_page.php">
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Email ID" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+               </div>
+               <div class="form-group form-check">
+                 <label class="form-check-label">
+                 <input class="form-check-input" type="checkbox" name="remember"> Remember me</label>
+               </div>
+               <button type="submit" class="btn btn-primary container-fluid mb-5" style = "background-color: maroon; font-size: 120%;"> Log In </button>
+               </form>
+           </div>
+        </div>
+       </div>
+     </div>
+     </div>
+  </div>
+
+  <div class = "push-right col-sm-1 py-4"> 
+    <button id = "sign" data-toggle="modal" data-target="#mysignin"><b>Sign Up </b></button>
+  </div>
+
+  <div class="modal fade" id="mysignin">
+    <div class="modal-dialog" >
+      <div class="modal-content" style = "max-width: 90%;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style = "background-color: #f0e6df;">
+          <h4 class="modal-title">Sign Up and Start Learning </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style = "background-color: #f0e6df;">
+           <div class = "container mt-1">
+           	 <div class = "row justify-content-center px-0 py-3">
+
+           	   <div class = "col-8" style = "background-color: #3b5998; color: white; text-align:center; font-size: 130%; font-family: Tahoma;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\fb.png" height = 30px; width = 30px; float = "left"> Continue with Facebook
+           	   </div>
+
+           	   <div class = "col-8" style = "background-color: white; border: 1px solid lightgray; text-align:center; font-size: 130%; font-family: Georgia;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\google.png" height = 35px; width = 35px; float = "left"> Continue with Google
+               </div> 
+           	 </div>
+           </div>
+           
+           <hr >
+           <div class="container">
+               <form action="/action_page.php">
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Full Name" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Email ID" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+               </div>
+
+               <button type="submit" class="btn btn-primary container-fluid mb-5 mt-3" style = "background-color: maroon; font-size: 120%;"> Sign Up for Free </button>
+               </form>
+           </div>
+        </div>
+       </div>
+     </div>
+     </div>
+</div>
+</div>
+
+<a id="button"></a>
+
+
+<div class = "container-fluid course ">
+  <div class = "row " style = "background-image: linear-gradient(to right, #291a45 0% , #c8a2c8 100%); color: white;" >
+    <div class = "col-sm-6" style = "padding-top: 40px; padding-left: 80px;" >
+      <a href = "#" style = "color: white;"> Browse  </a> ⮞
+      <a href = "#" style = "color: white;">  Economics - UPSC Mains </a> 
+      <h1 style = "padding-top: 10px;"> Economics - UPSC Mains </h1>
+    </div>
+    <div class = "col-sm-6" style = "padding-top: 40px; padding-left: 80px;">
+       Offered by <br> <span style = "font-size: 270%; font-family: Garamond;"> The Golden Sparrow </span>
+    </div>
+
+    <div class = "col-sm-12 rating pb-2" style = "padding-top: 5px; padding-left: 80px;">
+     <span class="fa fa-star checked" style = "font-size: 120%; padding: 5px;"></span>
+     <span class="fa fa-star checked" style = "font-size: 120%; padding: 5px;"></span>
+     <span class="fa fa-star checked" style = "font-size: 120%; padding: 5px;"></span>
+     <span class="fa fa-star" style = "font-size: 120%; padding: 5px;"></span>
+     <span class="fa fa-star" style = "font-size: 120%; padding: 5px;"></span>
+    </div>
+
+    <div class = "col-sm-12" style = "padding-top: 5px; padding-left: 80px;">
+      4.9 Stars | 120 Ratings
+    </div>
+
+    <div class = "col-sm-12" style = "padding-top: 20px; padding-left: 80px; ">
+      <img src = "C:\Users\jhash_000\Desktop\Economics Portal\dad.jpg" class = "rounded-circle" style =  "float: left; height: 60px; width: 60px;">
+      <span style = "padding-left: 15px; padding-top: 500px; "> Dr. S. K. Jha </span>
+    </div>
+
+    <div class = "col-sm-12 pb-5" style = "padding-top: 30px; padding-left: 80px; padding-bottom: 60px;">
+      <div style = "font-size: 300%; font-weight: lighter; padding-bottom: 10px;">  ₹ 5,000 </div>
+      <button style = " padding: 15px; font-size: 150%; background-color: #1d225e; margin-right: 20px;  border: none; color: white;"> Add to Cart </button>    
+      <button style = " padding: 15px; font-size: 150%; background-color: #1d225e; margin-right: 10px;  border: none; color: white;"> Buy now </button>
+      <span style = "padding-left: 15px; padding-bottom: 0px;"> <b> 102 </b> enrolled already  </span>
+    </div>
+
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-sm sticky-top py-3" id = "about" style = "border-bottom: 1px solid lightgray; background-color: white; padding-left: 75px;">
+  <a class="navbar-brand" href="#" style = "color: #303030;"> UPSC Mains </a>
+  <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"><i class="fas fa-bars" style = "color: white;"></i></span>  
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+   <ul class="navbar-nav">
+     <li class="nav-item px-2">
+      <a class="nav-link" href="#about" style = "color: #303030;">Overview</a>
+     </li>
+     <li class="nav-item px-2">
+      <a class="nav-link" href="#syllabus" style = "color: #303030;">Syllabus</a>
+     </li>
+     <li class="nav-item px-2">
+      <a class="nav-link" href="#guru" style = "color: #303030;">Teacher</a>
+     </li>
+     <li class="nav-item px-2">
+      <a class="nav-link" href="#reviews" style = "color: #303030;">Reviews</a>
+     </li>
+   </ul>
+  </div>
+</nav>
+
+<div class = "container-fluid pb-5" >
+ <div class = "row">
+
+   <div class = "col-sm-8" style = "padding: 50px 0px 50px 70px; ">
+        <h3 style = "padding-bottom: 30px;">An Overview of this Course</h3>
+        <p style = "max-width: 55vw; text-align: justify;">
+           Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it. Many researchers also think it is the best way to make progress towards human-level AI. In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best practices in innovation as it pertains to machine learning and AI.</p>
+         <p style = "max-width: 55vw; text-align: justify;">
+           This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI). The course will also draw from numerous case studies and applications, so that you'll also learn how to apply learning algorithms to building smart robots (perception, control), text understanding (web search, anti-spam), computer vision, medical informatics, audio, database mining, and other areas.
+        </p>
+   </div>
+
+   <div class = "col-sm-4">
+      <div class = "row " style = " margin-top: 70px; margin-right: 50px;">
+        <div class = "col-sm-12" style = "padding: 30px; margin-bottom: 10px; background-color: lightgray;">
+          <span style = " font-size: 150%;">  PDF- based notes inclusive </span>
+            <p> Online notes altered to keep your preparation at par with the lectures.</p>
+        </div>
+        <div class = "col-sm-12" style = "padding: 30px; margin-bottom: 10px; background-color: lightgray;">
+          <span style = " font-size: 150%;">  Approx. 23 hours to complete </span>
+        </div>
+        <div class = "col-sm-12" style = "padding: 30px; margin-bottom: 10px; background-color: lightgray;">
+          <span style = " font-size: 150%;">  100% Online </span>
+            <p> Learn at your own schedule</p>
+        </div>
+        <div class = "col-sm-12" style = "padding: 30px; margin-bottom: 10px; background-color: lightgray;">
+          <span style = " font-size: 150%;">  Featuring Mock Tests </span>
+            <p> Regular online mock tests seek to edge your grasp over the topic.</p>
+        </div>
+        <div class = "col-sm-12" style = "padding: 30px; margin-bottom: 10px; background-color: lightgray;">
+          <span style = " font-size: 150%;">  Medium: English & Hindi </span>
+            <p> Both of the popular mediums to suit requirements of all students. </p>
+        </div>
+      </div>
+   </div>
+
+ </div>
+</div>
+
+<hr  id = "syllabus" style = "border-bottom: 1px solid gray; width: 100%; margin-bottom: 30px; align-self: center;">
+
+<div class = "container-fluid">
+   <div class = "row">
+     <div class = "col-sm-12" style = "text-align: center; padding: 60px;">
+        <h2 ><i class="fas fa-book-open" style = "color: #1d225e; font-size: 190%;"></i> Syllabus - What you will learn from this course </h2>
+     </div>
+
+     <div class = "col-sm-2">
+        <div class = "row">
+          <div class = "col-sm-12"  style = "text-align: center; padding: 40px;">
+            WEEK
+          </div>
+          <div class = "col-sm-12" style = "text-align: center; padding: 40px;">
+            <h1>1</h1>
+          </div>
+        </div>
+     </div>
+
+     <div class = "col-sm-10" style = " padding: 40px;">
+        <h3> Introduction </h3>
+        <p style = "padding-right: 80px; padding-top: 20px; text-align: justify">Welcome to Machine Learning! In this module, we introduce the core idea of teaching a computer to learn concepts using data—without being explicitly programmed. The Course Wiki is under construction. Please visit the resources tab for the most complete and up-to-date information.
+        </p>
+     </div>
+
+     <div class = "col-sm-2">
+        <div class = "row">
+          <div class = "col-sm-12"  style = "text-align: center; padding: 40px;">
+            WEEK
+          </div>
+          <div class = "col-sm-12" style = "text-align: center; padding: 40px;">
+            <h1>2</h1>
+          </div>
+        </div>
+     </div>
+     <div class = "col-sm-10" style = " padding: 40px;">
+        <h3> Economics Section 2 </h3>
+        <p style = "padding-right: 80px; padding-top: 20px; text-align: justify">Welcome to Machine Learning! In this module, we introduce the core idea of teaching a computer to learn concepts using data—without being explicitly programmed. The Course Wiki is under construction. Please visit the resources tab for the most complete and up-to-date information.
+        </p>
+     </div>
+     <div class = "col-sm-2">
+        <div class = "row">
+          <div class = "col-sm-12"  style = "text-align: center; padding: 40px;">
+            WEEK
+          </div>
+          <div class = "col-sm-12" style = "text-align: center; padding: 40px;">
+            <h1>3</h1>
+          </div>
+        </div>
+     </div>
+     <div class = "col-sm-10" style = " padding: 40px;">
+        <h3> Economics Section 3 </h3>
+        <p style = "padding-right: 80px; padding-top: 20px; text-align: justify">Welcome to Machine Learning! In this module, we introduce the core idea of teaching a computer to learn concepts using data—without being explicitly programmed. The Course Wiki is under construction. Please visit the resources tab for the most complete and up-to-date information.
+        </p>
+     </div>
+     <div class = "col-sm-2">
+        <div class = "row">
+          <div class = "col-sm-12"  style = "text-align: center; padding: 40px;">
+            WEEK
+          </div>
+          <div class = "col-sm-12" style = "text-align: center; padding: 40px;">
+            <h1>4</h1>
+          </div>
+        </div>
+     </div>
+     <div class = "col-sm-10" style = " padding: 40px;">
+        <h3> Economics Section 4 </h3>
+        <p style = "padding-right: 80px; padding-top: 20px; text-align: justify">Welcome to Machine Learning! In this module, we introduce the core idea of teaching a computer to learn concepts using data—without being explicitly programmed. The Course Wiki is under construction. Please visit the resources tab for the most complete and up-to-date information.
+        </p>
+     </div>
+   </div>
+</div>
+
+<hr id = "guru">
+
+<div class = "container-fluid" >
+  <div class = "row">
+    <div class = "col-sm-12">
+      <h3 style = "padding: 30px 0px 30px 70px;"> Know your Guru :</h3>
+
+      <div class = "row pb-3">
+
+         <div  class = "col-sm-2" >
+           <img src = "C:\Users\jhash_000\Desktop\Economics Portal\dad.jpg" class = "rounded-circle img-thumbnail" style = "height: 170px; width: 170px; 
+             margin-left: 70px;" >
+         </div>
+
+         <div class = "col-sm-6 ">
+           <h5  style="padding-left: 10px; padding-top: 20px;">Dr. Sunil Kumar Jha</h5>
+           <p style = "padding-left: 10px; ">
+             Welcome to Machine Learning! In this module, we introduce the core idea of teaching a computer to learn concepts 
+            using data—without being explicitly programmed. 
+           </p>
+           <span style = "padding-left: 10px;">
+           <b> Courses Undertaken: 4 </b> </span>
+  
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr id = "reviews">
+
+
+
+<h3 style = "padding-left: 6%; display: inline-block; margin-top: 30px;">User Rating</h3>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p style = "padding-left: 6%;"> 4.1 average based on 254 reviews.</p>
+<hr style="border:2px solid #f1f1f1; width: 70%;">
+
+<div class="ro" style = "margin-bottom: 30px;">
+  <div class="side">
+    <div>5 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-5"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>150</div>
+  </div>
+  <div class="side">
+    <div>4 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-4"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>63</div>
+  </div>
+  <div class="side">
+    <div>3 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-3"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>15</div>
+  </div>
+  <div class="side">
+    <div>2 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-2"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>6</div>
+  </div>
+  <div class="side">
+    <div>1 star</div>
+  </div>
+  <div class="middle">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+    </div>
+  </div>
+  <div class="side right">
+    <div>20</div>
+  </div>
+</div>
+
+<footer class = "container-fluid  position-absolute mt-5" style = "background-color: #272636; font-size: 90%;">   
+     <div class = "row justify-content-center">  
+       <div class = "col-sm-3 pt-2" style = " color: gray; margin-top: 35px; background-color: #272636;"> 
+           <h4 style = "color: white; padding-bottom: 12px;">Quick Links</h4>
+           <ul style=" list-style-type: none;">
+            <li style = "padding-bottom: 12px;"> Privacy Policy </li>
+            <li style = "padding-bottom: 12px;"> Contact and Support </li>
+            <li> About Us </li>
+           </ul>
+       </div>
+       <div class = "col-sm-3 pt-2" style = " color: gray; margin-top: 30px; background-color: #272636;"> 
+           <h4 style = "color: white; padding-bottom: 12px;">The Golden Sparrow</h4>
+           <ul style=" list-style-type: none;">
+            <li style = "padding-bottom: 12px;"> Course Library </li>
+            <li style = "padding-bottom: 12px;"> Youtube </li>
+            <li style = "padding-bottom: 12px;"> Facebook </li>
+            <li> Our Reviews </li>
+           </ul>
+       </div>	  
+    	   
+	     	   <div class = "col-sm-3" style = "background-color:  #272636; padding-top: 30px;"> </div>
+           <div class = "col-sm-5 pb-5" style = "padding-top: 30px; padding-left: 50px; background-color: #272636; color:white; ">
+               Copyright © TheGoldenSparrow™ 2020 | All Rights Reserved.</div> 
+	     	   <div class = "col-sm-4" style = "text-align: center; padding-top: 30px; margin-bottom: 0px; padding-top: 5px; background-color: #272636;">           
+              <a href="#" >
+                  <img src = "C:\Users\jhash_000\Desktop\Economics Portal\fbicon.png" style = "height: 30px; width: 30px; ">
+              </a>           
+              <a href="#" style = "padding-left: 20px;">
+                  <img src = "C:\Users\jhash_000\Desktop\Economics Portal\utubeicon.png" style = "height: 40px; width: 40px; ">       
+              </a>
+           </div>           
+
+	  </div> 
+</footer>
+</body>
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 270) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '270');
+});
+
+// Cache selectors
+var lastId,
+ topMenu = $("#mainNav"),
+ topMenuHeight = topMenu.outerHeight()+1,
+ // All list items
+ menuItems = topMenu.find("a"),
+ // Anchors corresponding to menu items
+ scrollItems = menuItems.map(function(){
+   var item = $($(this).attr("href"));
+    if (item.length) { return item; }
+ });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 850);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }                   
+});
+
+
+
+</script>
+</html>

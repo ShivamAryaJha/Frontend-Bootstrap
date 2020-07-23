@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Course Library</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="C:/Users/jhash_000/Desktop/Economics Portal/pageup.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta name="Shivam Arya" content="Geekystuff">
+<meta name="description" content="My first website ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+   font-family: "Verdana";
+   height:100%;
+}
+
+.customhead{
+   border-bottom: 1px solid lightgray;
+   background-color: #ebebe6;
+}
+
+
+#logo{
+    font-family: "Garamond";
+    font-size: 280%;
+    color: #0066cc;
+    line-height: 20px;
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.cart:hover, .bell:hover{
+    background-color: lightgray;
+}
+
+#log{
+	font-family: "Garamond";
+    float:right;
+	color:#0066cc;
+	font-size: 120%;
+	background-color:  #ebebe6;
+	border: 1px solid #0066cc;
+    margin-right: 0px;
+    width: 80px;
+    height: 42px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#logo:hover, #log:hover{
+	color: maroon ;
+	border-color: maroon;
+}
+
+#sign{
+	font-family: "Garamond";
+	float:right;
+	background-color: #0066cc;
+	color:white;
+	font-size: 120%;
+	border: none;
+    margin-right: 30px;
+    width: 85px;
+    height: 42px;    margin-left: 0px;
+}
+
+#sign:hover{
+    background-color: maroon;
+}
+
+.cart, ,.bell{
+	border: 1px solid gray;
+}
+
+
+</style>
+</head>
+
+
+
+
+<body>
+<div  class = "container-fluid customhead ">
+  <div class = "row align-items-center justify-content-start no-gutters" >
+  <div class = "pl-4  col-md-4 pt-3 pb-4  ml-5 logodiv"> 
+	<h1 id = "logo"> TheGoldenSparrow </h1>
+  </div>
+  <div class = "float-right col-md-4 pt-4 pb-3 "> 
+  </div>
+  <div class = "col-md-1 py-3 pl-1 pr-0 "> 
+      <a href="#"  title="Shopping Cart" data-toggle="popover" data-placement="bottom" data-content="Your cart is empty. Keep Shopping to find a course.">
+	  <i class="far fa-bell" class="img-thumbnail bell" style = "font-size: 200%; background-color: white; padding: 9px; border-radius: 25px 25px 25px 25px;"> </i> </a>
+
+	 <img src = "C:\Users\jhash_000\Desktop\Economics Portal\download.jpg" class="float-right rounded-circle img-thumbnail cart"  height = 45px; width = 50px; >
+
+  </div>
+  <div class = "push-right col-md-1  py-4" > 
+    <button id = "log" type = "button" class = " btn btn-primary" data-toggle="modal" data-target="#mylogin"> LogIn </button>
+    
+    <div class="modal fade" id="mylogin">
+    <div class="modal-dialog">
+      <div class="modal-content" style = "max-width: 90%;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style = "background-color: #f0e6df;">
+          <h4 class="modal-title">Log In to your Account </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style = "background-color: #f0e6df;">
+           <div class = "container mt-1">
+           	 <div class = "row justify-content-center px-0 py-3">
+
+           	   <div class = "col-8" style = "background-color: #3b5998; color: white; text-align:center; font-size: 130%; font-family: Tahoma;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\fb.png" height = 30px; width = 30px; float = "left"> Continue with Facebook</div>
+
+           	   <div class = "col-8" style = "background-color: white; border: 1px solid lightgray; text-align:center; font-size: 130%; font-family: Georgia;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\google.png" height = 35px; width = 35px; float = "left"> Continue with Google
+               </div> 
+           	 </div>
+           </div>
+           
+           <hr >
+           <div class="container">
+               <form action="/action_page.php">
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Email ID" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+               </div>
+               <div class="form-group form-check">
+                 <label class="form-check-label">
+                 <input class="form-check-input" type="checkbox" name="remember"> Remember me</label>
+               </div>
+               <button type="submit" class="btn btn-primary container-fluid mb-5" style = "background-color: maroon; font-size: 120%;"> Log In </button>
+               </form>
+           </div>
+        </div>
+       </div>
+     </div>
+     </div>
+  </div>
+
+  <div class = "push-right col-sm-1 py-4"> 
+    <button id = "sign" data-toggle="modal" data-target="#mysignin"><b>Sign Up </b></button>
+  </div>
+
+  <div class="modal fade" id="mysignin">
+    <div class="modal-dialog" >
+      <div class="modal-content" style = "max-width: 90%;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style = "background-color: #f0e6df;">
+          <h4 class="modal-title">Sign Up and Start Learning </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style = "background-color: #f0e6df;">
+           <div class = "container mt-1">
+           	 <div class = "row justify-content-center px-0 py-3">
+
+           	   <div class = "col-8" style = "background-color: #3b5998; color: white; text-align:center; font-size: 130%; font-family: Tahoma;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\fb.png" height = 30px; width = 30px; float = "left"> Continue with Facebook
+           	   </div>
+
+           	   <div class = "col-8" style = "background-color: white; border: 1px solid lightgray; text-align:center; font-size: 130%; font-family: Georgia;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\google.png" height = 35px; width = 35px; float = "left"> Continue with Google
+               </div> 
+           	 </div>
+           </div>
+           
+           <hr >
+           <div class="container">
+               <form action="/action_page.php">
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Full Name" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Email ID" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+               </div>
+
+               <button type="submit" class="btn btn-primary container-fluid mb-5 mt-3" style = "background-color: maroon; font-size: 120%;"> Sign Up for Free </button>
+               </form>
+           </div>
+        </div>
+       </div>
+     </div>
+     </div>
+</div>
+</div>
+
+<a id="button"></a>
+
+ <div class="container-fluid" style = "border-bottom: 1px solid gray;">
+   <br>
+   <ul class="nav nav-pills" role="tablist" style = "padding-left: 60px;">
+
+     <li class="nav-item">
+      <a class="nav-link active" data-toggle="pill" href="#home">
+        <div style = "display:inline-block;">
+          <div style = "width: 100%; text-align: center;">
+            <i class="fas fa-atom" style = " width: 40px; align-self: center; padding: 0px;"> </i>
+          </div>
+          <div style = "width: 100%; text-align: center; padding-top: 1px;">
+            DASHBOARD
+          </div>
+        </div>
+      </a>
+     </li>
+
+     <li class="nav-item">
+      <a class="nav-link " data-toggle="pill" href="#home">
+        <div style = "display:inline-block;">
+          <div style = "width: 100%; text-align: center;">
+            <i class="fas fa-atom" style = " width: 40px; align-self: center; padding: 0px;"> </i>
+          </div>
+          <div style = "width: 100%; text-align: center; padding-top: 1px;">
+            MY COURSES
+          </div>
+        </div>
+      </a>
+     </li>
+
+    <li class="nav-item">
+      <a class="nav-link " data-toggle="pill" href="#home">
+        <div style = "display:inline-block;">
+          <div style = "width: 100%; text-align: center;">
+            <i class="fas fa-atom" style = " width: 40px; align-self: center; padding: 0px;"> </i>
+          </div>
+          <div style = "width: 100%; text-align: center; padding-top: 1px;">
+            QUIZ ZONE
+          </div>
+        </div>
+      </a>
+     </li>
+
+     <li class="nav-item">
+      <a class="nav-link " data-toggle="pill" href="#home">
+        <div style = "display:inline-block;">
+          <div style = "width: 100%; text-align: center;">
+            <i class="fas fa-atom" style = " width: 40px; align-self: center; padding: 0px;"> </i>
+          </div>
+          <div style = "width: 100%; text-align: center; padding-top: 1px;">
+            PURCHASES
+          </div>
+        </div>
+      </a>
+     </li>
+
+   </ul>
+ </div>
+
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+
+<footer class = "container-fluid  position-absolute mt-5" style = "background-color: #272636; font-size: 90%;">   
+     <div class = "row justify-content-center">  
+       <div class = "col-sm-3 pt-2" style = " color: gray; margin-top: 35px; background-color: #272636;"> 
+           <h4 style = "color: white; padding-bottom: 12px;">Quick Links</h4>
+           <ul style=" list-style-type: none;">
+            <li style = "padding-bottom: 12px;"> Privacy Policy </li>
+            <li style = "padding-bottom: 12px;"> Contact and Support </li>
+            <li> About Us </li>
+           </ul>
+       </div>
+       <div class = "col-sm-3 pt-2" style = " color: gray; margin-top: 30px; background-color: #272636;"> 
+           <h4 style = "color: white; padding-bottom: 12px;">The Golden Sparrow</h4>
+           <ul style=" list-style-type: none;">
+            <li style = "padding-bottom: 12px;"> Course Library </li>
+            <li style = "padding-bottom: 12px;"> Youtube </li>
+            <li style = "padding-bottom: 12px;"> Facebook </li>
+            <li> Our Reviews </li>
+           </ul>
+       </div>	  
+    	   
+	     	   <div class = "col-sm-3" style = "background-color:  #272636; padding-top: 30px;"> </div>
+           <div class = "col-sm-5 pb-5" style = "padding-top: 30px; padding-left: 50px; background-color: #272636; color:white; ">
+               Copyright © TheGoldenSparrow™ 2020 | All Rights Reserved.</div> 
+	     	   <div class = "col-sm-4" style = "text-align: center; padding-top: 30px; margin-bottom: 0px; padding-top: 5px; background-color: #272636;">           
+           <a href="#" >
+             <img src = "C:\Users\jhash_000\Desktop\Economics Portal\fbicon.png" style = "height: 30px; width: 30px; ">
+           </a>           
+           <a href="#" style = "padding-left: 20px;">
+             <img src = "C:\Users\jhash_000\Desktop\Economics Portal\utubeicon.png" style = "height: 40px; width: 40px; ">       
+           </a>
+           </div>          
+
+	  </div> 
+</footer>
+</body>
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 270) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '270');
+});
+
+// Cache selectors
+var lastId,
+ topMenu = $("#mainNav"),
+ topMenuHeight = topMenu.outerHeight()+1,
+ // All list items
+ menuItems = topMenu.find("a"),
+ // Anchors corresponding to menu items
+ scrollItems = menuItems.map(function(){
+   var item = $($(this).attr("href"));
+    if (item.length) { return item; }
+ });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+  var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+  $('html, body').stop().animate({ 
+      scrollTop: offsetTop
+  }, 850);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       menuItems
+         .parent().removeClass("active")
+         .end().filter("[href=#"+id+"]").parent().addClass("active");
+   }                   
+});
+
+
+
+</script>
+</html>

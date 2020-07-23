@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>The Golden Sparrow</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="C:/Users/jhash_000/Desktop/Economics Portal/pageup.css">
+<link rel="stylesheet" href="C:/Users/jhash_000/Desktop/Economics Portal/HomepageQuote.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta name="Shivam Arya" content="Geekystuff">
+<meta name="description" content="My first website ">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+   font-family: "Verdana";
+   background-color: #e6ecff;
+   height:100%;
+}
+
+.icons{
+	height: 100px;
+	color: white;
+}
+
+.icontext{
+    background-image: linear-gradient(to right, #b31302 0% , #411a78 100%);
+	padding-top: 20px;
+	padding-bottom: 25px;
+    font-size: 120%;
+    text-align: center;
+}
+
+.picframe{
+   background-image: url("C:/Users/jhash_000/Desktop/Economics Portal/vintage-watch-old-glasses-33085.jpg");
+   height: 95vh; 
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: "Simplifica";
+}
+
+.customhead{
+   border-bottom: 1px solid lightgray;
+   background-color: #ebebe6;
+   font-family: "Garamond";
+}
+
+
+#logo{
+    font-family: "Garamond";
+    font-size: 280%;
+    color: #0066cc;
+    line-height: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+ .cart:hover, .bell:hover{
+    background-color: lightgray;
+}
+
+#log{
+	font-family: "Garamond";
+    float:right;
+	color:#0066cc;
+	font-size: 120%;
+	background-color:  #ebebe6;
+	border: 2px solid #0066cc;
+    margin-right: 0px;
+    width: 80px;
+    height: 42px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#logo:hover, #log:hover{
+	color: maroon ;
+	border-color: maroon;
+}
+
+#sign{
+	font-family: "Garamond";
+	float:right;
+	background-color: #0066cc;
+	color:white;
+	font-size: 120%;
+	border: none;
+    margin-right: 30px;
+    width: 85px;
+    height: 42px;    margin-left: 0px;
+}
+
+#sign:hover{
+    background-color: maroon;
+}
+
+.cart, ,.bell{
+	border: 1px solid gray;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+</style>
+</head>
+
+
+
+
+<body>
+<div  class = "container-fluid customhead ">
+  <div class = "row align-items-center justify-content-start no-gutters" >
+   <div class = "pl-4  col-sm-4 pt-3 pb-4  ml-5 logodiv"> 
+	  <h1 id = "logo"> TheGoldenSparrow </h1>
+   </div>
+    <div class = " col-sm-1"> 
+      <div class="dropdown" style = "display: inline-block; float: right; margin-top: 4px; margin-right: 90px;">
+       <button type="button" class="dropdown-toggle" data-toggle="dropdown" style = " background-color: #0066cc; font-size: 130%; padding: 5px 10px 5px 10px; border: none;
+         color: white; border-radius: 6px 6px 6px 6px; ">
+           Discover 
+       </button>
+       <div class="dropdown-menu">
+         <a class="dropdown-item" href="#" style = "font-size: 130%;">Who we Are</a>
+         <a class="dropdown-item" href="#" style = "font-size: 130%;">Course Library</a>
+         <a class="dropdown-item" href="#" style = "font-size: 130%;">Know your Guru</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#" style = "font-size: 130%;">Got Feedback ?</a>
+       </div>
+      </div>
+   </div>
+
+   <div class = "float-right col-sm-3 pt-4 pb-3 "> 
+   </div>
+
+  <div class = "col-sm-1 py-3 pl-1 pr-0 "> 
+      <a href="#"  title="Shopping Cart" data-toggle="popover" data-placement="bottom" data-content="Your cart is empty. Keep Shopping to find a course.">
+	    <i class="far fa-bell" class="img-thumbnail bell" style = "font-size: 200%; background-color: white; padding: 9px; border-radius: 25px 25px 25px 25px;"> </i>
+	  </a>
+	 <img src = "C:\Users\jhash_000\Desktop\Economics Portal\download.jpg" class="float-right rounded-circle img-thumbnail cart"  height = 45px; width = 50px; >
+  </div>
+
+  <div class = "push-right col-sm-1  py-4" > 
+    <button id = "log" type = "button" class = " btn btn-primary" data-toggle="modal" data-target="#mylogin"> LogIn </button>
+    
+    <div class="modal fade" id="mylogin">
+    <div class="modal-dialog">
+      <div class="modal-content" style = "max-width: 90%;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style = "background-color: #f0e6df;">
+          <h4 class="modal-title">Log In to your Account </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style = "background-color: #f0e6df;">
+           <div class = "container mt-1">
+           	 <div class = "row justify-content-center px-0 py-3">
+
+           	   <div class = "col-8" style = "background-color: #3b5998; color: white; text-align:center; font-size: 130%; font-family: Tahoma;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\fb.png" height = 30px; width = 30px; float = "left"> Continue with Facebook</div>
+
+           	   <div class = "col-8" style = "background-color: white; border: 1px solid lightgray; text-align:center; font-size: 130%; font-family: Georgia;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\google.png" height = 35px; width = 35px; float = "left"> Continue with Google
+               </div> 
+           	 </div>
+           </div>
+           
+           <hr >
+           <div class="container">
+               <form action="/action_page.php">
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Email ID" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+               </div>
+               <div class="form-group form-check">
+                 <label class="form-check-label">
+                 <input class="form-check-input" type="checkbox" name="remember"> Remember me</label>
+               </div>
+               <button type="submit" class="btn btn-primary container-fluid mb-5" style = "background-color: maroon; font-size: 120%;"><b> Log In </b></button>
+               </form>
+           </div>
+        </div>
+       </div>
+     </div>
+     </div>
+  </div>
+
+  <div class = "push-right col-sm-1 py-4"> 
+    <button id = "sign" data-toggle="modal" data-target="#mysignin"><b>Sign Up </b></button>
+  </div>
+
+  <div class="modal fade" id="mysignin">
+    <div class="modal-dialog" >
+      <div class="modal-content" style = "max-width: 90%;">
+      
+        <!-- Modal Header -->
+        <div class="modal-header" style = "background-color: #f0e6df;">
+          <h4 class="modal-title">Sign Up and Start Learning </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body" style = "background-color: #f0e6df;">
+           <div class = "container mt-1">
+           	 <div class = "row justify-content-center px-0 py-3">
+
+           	   <div class = "col-8" style = "background-color: #3b5998; color: white; text-align:center; font-size: 130%; font-family: Tahoma;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\fb.png" height = 30px; width = 30px; float = "left"> Continue with Facebook
+           	   </div>
+
+           	   <div class = "col-8" style = "background-color: white; border: 1px solid lightgray; text-align:center; font-size: 130%; font-family: Georgia;
+           	   padding: 10px; margin-bottom: 10px;" ><img src = "C:\Users\jhash_000\Desktop\Economics Portal\google.png" height = 35px; width = 35px; float = "left"> Continue with Google
+               </div> 
+           	 </div>
+           </div>
+           
+           <hr >
+           <div class="container">
+               <form action="/action_page.php">
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Full Name" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="email" class="form-control" id="email" placeholder="Email ID" name="email">
+               </div>
+               <div class="form-group">
+                 <input type="password" class="form-control" id="pwd" placeholder="Password" name="pswd">
+               </div>
+
+               <button type="submit" class="btn btn-primary container-fluid mb-5 mt-3" style = "background-color: maroon; font-size: 120%;"> Sign Up for Free </button>
+               </form>
+           </div>
+        </div>
+       </div>
+     </div>
+     </div>
+</div>
+</div>
+
+<a id="button"></a>
+
+<div class="container-fluid picframe">
+  <div class = "row justify-content-center">
+  	<div class = "col-sm-6">
+  		<h1 style = "font-size: 4vw ; color:white; text-align: center; padding-top: 50px; margin-top: 170px; padding-bottom: 50px;  border: 3px solid #f1f1f1;  
+  		  background-color: rgba(0,0,0, 0.4); ">
+  		  Economics for UPSC<br> Civil Services Exams <br>made easier.</h1>
+  	</div>
+  </div>
+</div>
+
+<div class = "container-fluid icons pb-5" >
+	<div class = "row justify-content-center mb-2" style = " ">
+		<div class = "col-sm-4 icontext"><i class="fas fa-chalkboard-teacher" style = "font-size:250%; padding-left:  20px;"> </i>
+		              Under guidance of Expert Dr. S. K. Jha</div>
+		<div class = "col-sm-4 icontext"><i class="fas fa-graduation-cap" style = "font-size:250%; "> </i> UPSC Prelims + Mains both covered</div>
+		<div class = "col-sm-4 icontext"><i class="fas fa-award" style = "font-size:250%; ;"> </i> Purchase Once. Lifetime Access</div>
+	</div> 
+</div>
+
+<div style="width: 960px; margin: 0 auto; padding-top: 80px; padding-bottom: 80px;"> 
+    <hr style="margin: 60px auto; opacity: 3; ">
+    <h1>Education in itself, </h1>        
+    <div class="testimonial-quote group right">
+        <div class="quote-container">
+            <div>
+                <blockquote>
+                    <p>	Is not the learning of some facts, it is the training your mind needs to develop the ability to think.  ”</p>
+                </blockquote>  
+                <cite><span>Albert Einstein</span><br>
+                Theoretical Physicist <br>
+                </cite>
+            </div>
+        </div>
+    </div>     
+    <hr style="margin: 30px auto; opacity: 3;">
+</div>
+
+<div class = "nothing container-fluid" >
+  <div class = "row  justify-content-center" >
+   <div class = "col-sm-8">
+     <div class = "row justify-content-center"  style = "color: #333333; background-color: white; ">
+
+       <div class = "col-sm-12">
+	     <h1 style = "text-align: center; font-size: 230%; padding-top: 100px; padding-bottom: 70px"> What we provide </h1>
+	   </div>
+
+	   <div class = "col-sm-6" style = " font-size: 120%; padding: 60px 30px 60px 70px; vertical-align: middle;"> 
+	      <img src = "C:Users\jhash_000\Desktop\Economics Portal\teach.png" style = "float: left; height : 120px; width: 100px; ">
+          <h4 > Structured Online Courses </h4>
+          <p style = "text-align: justify;"> Each online course has been designed insync with a particular CSE and aims to cover all Economics related topics. </p>
+	   </div>
+
+	   <div class = "col-sm-6" style = " font-size: 120%; padding: 60px 70px 60px 30px; vertical-align: middle;">
+	      <img src = "C:Users\jhash_000\Desktop\Economics Portal\exam.png" style = "float: left; height : 100px; width: 80px">
+          <h4> Regular Mock Tests </h4>
+          <p style = "text-align: justify;"> Regular online mock tests to edge your grasp over the subject and help you to keep a check on your progress throughout each course.  </p>
+	   </div>
+               
+       <div class = "col-sm-6" style = " font-size: 120%; padding: 60px 30px 60px 70px; vertical-align: middle;"> 
+	       <img src = "C:Users\jhash_000\Desktop\Economics Portal\read.gif" style = "float: left; height : 100px; width: 110px; margin-right: 10px;">
+           <h4> Video Lectures & Notes by Dr. S. K. Jha </h4>
+           <p style = "text-align: justify;"> On-Demand Lectures and PDF based notes altered to cover the entire CSE syallabus of Economics lets you revise 
+            through your browser screen.</p>
+	   </div>
+
+	   <div class = "col-sm-6" style = " font-size: 120%; padding: 60px 70px 60px 30px; vertical-align: middle;">
+	   	  <img src = "C:Users\jhash_000\Desktop\Economics Portal\time.png" style = "float: left; height : 90px; width: 120px">
+          <h4> 24 × 7 Access to suit your choice of timings  </h4>
+          <p style = "text-align: justify;"> Round the clock availability gives students access to our resources as per their demands and needs.  </p>
+	   </div>
+
+       <div class = "col-sm-12 py-2">
+	     <hr style = "border: 1px solid lightgray; align-self: center; width: 80%; margin-top: 50px;">
+	   </div>
+
+       <div class = "col-sm-7 my-3">
+	     <h1 style = " font-size: 140%; padding-left: 50px; "> Our UPSC CSE Courses start from: ₹ 2,000 </h1>
+	   </div>
+ 
+       <div class = "col-sm-5 mt-1 mb-4">
+	      <button style = "font-size: 130%; padding: 10px; background-color: #0066cc; color: white; border-radius: 10px 10px 10px 10px; margin-right: 40px; float: right;">
+	        Checkout our Course Library </button>
+	   </div>    
+
+     </div>
+   </div>
+  </div>
+</div>
+<br>
+
+
+<footer class = "container-fluid  position-absolute mt-5" style = "background-color: #272636; font-size: 90%;">   
+     <div class = "row justify-content-center">  
+       <div class = "col-sm-3 pt-2" style = " color: gray; margin-top: 35px; background-color: #272636;"> 
+           <h4 style = "color: white; padding-bottom: 12px;">Quick Links</h4>
+           <ul style=" list-style-type: none;">
+            <li style = "padding-bottom: 12px;"> Privacy Policy </li>
+            <li style = "padding-bottom: 12px;"> Contact and Support </li>
+            <li> About Us </li>
+           </ul>
+       </div>
+       <div class = "col-sm-3 pt-2" style = " color: gray; margin-top: 30px; background-color: #272636;"> 
+           <h4 style = "color: white; padding-bottom: 12px;">The Golden Sparrow</h4>
+           <ul style=" list-style-type: none;">
+            <li style = "padding-bottom: 12px;"> Course Library </li>
+            <li style = "padding-bottom: 12px;"> Youtube </li>
+            <li style = "padding-bottom: 12px;"> Facebook </li>
+            <li> Our Reviews </li>
+           </ul>
+       </div>	  
+    	   
+	     	   
+	   <div class = "col-sm-3" style = "background-color:  #272636; padding-top: 30px;"> </div>
+           <div class = "col-sm-5 pb-5" style = "padding-top: 30px; padding-left: 50px; background-color: #272636; color:white; ">
+               Copyright © TheGoldenSparrow™ 2020 | All Rights Reserved.
+           </div> 
+	       <div class = "col-sm-4" style = "text-align: center; padding-top: 30px; margin-bottom: 0px; padding-top: 5px; background-color: #272636;">           
+	     	  <a href="#" >
+	     	    <img src = "C:\Users\jhash_000\Desktop\Economics Portal\fbicon.png" style = "height: 30px; width: 30px; ">
+	     	  </a>           
+	     	  <a href="#" style = "padding-left: 20px;">
+	     	    <img src = "C:\Users\jhash_000\Desktop\Economics Portal\utubeicon.png" style = "height: 40px; width: 40px; ">     	
+	     	  </a>
+	       </div>      
+	    </div> 
+</footer>
+</body>
+
+
+
+
+
+<script>
+
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+
+var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 270) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '270');
+});
+
+</script>
+</html>
